@@ -1,0 +1,446 @@
+/* =========================
+   GLOBAL
+========================= */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f1f5f9;
+  color: #1e293b;
+}
+
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+
+.reg-wrap {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+
+/* =========================
+   REGISTRATION FORM
+========================= */
+
+.reg-form {
+  width: 100%;
+  max-width: 460px;
+  margin: 0 auto 40px;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 14px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+.reg-form h2 {
+  text-align: center;
+  margin: 0 0 25px;
+  color: #0f172a;
+  font-size: 28px;
+}
+
+
+/* =========================
+   LABEL
+========================= */
+
+.reg-form label {
+  display: block;
+  margin-bottom: 17px;
+  color: #334155;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+
+/* =========================
+   INPUT
+========================= */
+
+.reg-form input {
+  width: 100%;
+  padding: 12px 14px;
+  margin-top: 7px;
+
+  background: #f8fafc;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+
+  color: #1e293b;
+  font-size: 15px;
+
+  outline: none;
+  transition: 0.2s;
+}
+
+.reg-form input::placeholder {
+  color: #94a3b8;
+}
+
+.reg-form input:focus {
+  background: #ffffff;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+
+/* =========================
+   REGISTER BUTTON
+========================= */
+
+.reg-form button {
+  width: 100%;
+  padding: 13px;
+
+  background: #2563eb;
+  color: #ffffff;
+
+  border: none;
+  border-radius: 8px;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.reg-form button:hover {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+.reg-form button:active {
+  transform: translateY(0);
+}
+
+.reg-form button:disabled {
+  background: #94a3b8;
+  cursor: not-allowed;
+  transform: none;
+}
+
+
+/* =========================
+   ERROR
+========================= */
+
+.err {
+  display: block;
+  margin-top: 5px;
+  color: #dc2626;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+
+/* =========================
+   STATUS
+========================= */
+
+.status {
+  text-align: center;
+  margin: 15px 0 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.status.success {
+  color: #16a34a;
+}
+
+.status.error {
+  color: #dc2626;
+}
+
+
+/* =========================
+   TABLE SECTION
+========================= */
+
+.table-section {
+  width: 100%;
+  padding: 25px;
+
+  background: #ffffff;
+
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+
+/* =========================
+   TABLE HEADER
+========================= */
+
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.table-header h2 {
+  margin: 0;
+  color: #0f172a;
+  font-size: 24px;
+}
+
+
+/* =========================
+   REFRESH BUTTON
+========================= */
+
+.table-header button {
+  padding: 9px 18px;
+
+  background: #0f172a;
+  color: #ffffff;
+
+  border: none;
+  border-radius: 7px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.table-header button:hover {
+  background: #1e293b;
+}
+
+.table-header button:disabled {
+  background: #94a3b8;
+  cursor: not-allowed;
+}
+
+
+/* =========================
+   TABLE
+========================= */
+
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+
+  border: 1px solid #e2e8f0;
+  border-radius: 9px;
+}
+
+table {
+  width: 100%;
+  min-width: 750px;
+  border-collapse: collapse;
+}
+
+
+/* TABLE HEADER */
+
+thead {
+  background: #1e3a8a;
+}
+
+th {
+  padding: 13px 14px;
+
+  color: #ffffff;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  text-align: left;
+
+  border-right: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+
+/* TABLE BODY */
+
+td {
+  padding: 12px 14px;
+
+  color: #334155;
+
+  font-size: 14px;
+
+  border-bottom: 1px solid #e2e8f0;
+}
+
+
+/* ALTERNATE ROW */
+
+tbody tr:nth-child(even) {
+  background: #f8fafc;
+}
+
+
+/* HOVER ROW */
+
+tbody tr:hover {
+  background: #eff6ff;
+}
+
+
+/* LAST ROW */
+
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+
+/* =========================
+   TABLE SCROLLBAR
+========================= */
+
+.table-container::-webkit-scrollbar {
+  height: 7px;
+}
+
+.table-container::-webkit-scrollbar-track {
+  background: #e2e8f0;
+  border-radius: 10px;
+}
+
+.table-container::-webkit-scrollbar-thumb {
+  background: #94a3b8;
+  border-radius: 10px;
+}
+
+.table-container::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 768px) {
+
+  .reg-wrap {
+    padding: 30px 15px;
+  }
+
+  .reg-form {
+    max-width: 100%;
+    padding: 25px;
+  }
+
+  .table-section {
+    padding: 20px;
+  }
+
+  .table-header h2 {
+    font-size: 21px;
+  }
+
+  th,
+  td {
+    padding: 10px;
+    font-size: 13px;
+  }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 480px) {
+
+  .reg-wrap {
+    padding: 20px 10px;
+  }
+
+  .reg-form {
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+  }
+
+  .reg-form h2 {
+    font-size: 23px;
+  }
+
+  .reg-form input {
+    padding: 11px 12px;
+    font-size: 14px;
+  }
+
+  .reg-form button {
+    padding: 12px;
+    font-size: 15px;
+  }
+
+  .table-section {
+    padding: 15px;
+  }
+
+  .table-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .table-header h2 {
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .table-header button {
+    width: 100%;
+  }
+
+  table {
+    min-width: 750px;
+  }
+
+  th,
+  td {
+    padding: 9px;
+    font-size: 12px;
+  }
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 360px) {
+
+  .reg-wrap {
+    padding: 15px 8px;
+  }
+
+  .reg-form {
+    padding: 16px;
+  }
+
+  .reg-form h2 {
+    font-size: 21px;
+  }
+
+  .table-section {
+    padding: 10px;
+  }
+
+  .table-header h2 {
+    font-size: 18px;
+  }
+}
